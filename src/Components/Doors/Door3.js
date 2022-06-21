@@ -6,13 +6,18 @@ import {useNavigate} from "react-router-dom"
 function Door3(){
 
     const navigate = useNavigate();
-    const goToRoom5 = () => {
-        navigate('/Room5')
+    const goToRoom1 = () => {
+        navigate('/Room4')
     }
 
     return(
 
-            <img className = "left_door_image" src={require("./Dungeon Door.png")} alt="Door 1" onClick={goToRoom5}/>
+            <img 
+                className = "left_door_image_r2" 
+                src={require("./Dungeon Door.png")} 
+                alt="Door 3" 
+                onClick={goToRoom1}
+            />
         
     )
 }

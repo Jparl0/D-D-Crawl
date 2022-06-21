@@ -10,7 +10,12 @@ const goToRoom2 = () => {
 }
 
     return(
-            <img className = "left_door_image" src={require("./Dungeon Door.png")} alt="Door 1" onClick={goToRoom2}/>
+            <img 
+                className = "left_door_image" 
+                src={require("./Dungeon Door.png")} 
+                alt="Door 1" 
+                onClick={goToRoom2}
+            />
         
 
     )

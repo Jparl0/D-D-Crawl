@@ -5,13 +5,18 @@ function Door2(){
 
 
     const navigate = useNavigate();
-    const goToRoom2 = () => {
+    const goToRoom1 = () => {
         navigate('/Room3')
     }
     
     return(
 
-            <img className = "right_door_image" src={require("./Dungeon Door.png")} alt="Door 1" onClick={goToRoom2}/>
+            <img 
+                className = "right_door_image" 
+                src={require("./Dungeon Door.png")} 
+                alt="Door 2" 
+                onClick={goToRoom1}
+            />
 
     )
 }

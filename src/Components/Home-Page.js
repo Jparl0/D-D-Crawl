@@ -46,28 +46,25 @@ function clickMe() {
 }
 
 const navigate = useNavigate();
-const goToCharPage = () => {
-    navigate('/CharPage')
+const goToPickClass = () => {
+    navigate('/PickClass')
 }
   
     return(
 
         <div className="our_project">
-          <h1 > Our D&D Project </h1>
+          <h1 className="title">Saving Sinatra Sam </h1>
           
           <div className="story_begin">
-        <marquee direction="up" hegiht="80%" behavior="slide">Once upon a time, there was a small village on the edge of a river. 
-          One day a villager noticed a small basket floating down the river; the villager quickly swam out to investigate. Lo and behold, the basket held a baby!
-          15 years later the baby, named "Sam" by the townsfolk, grows up. He was born with a remarkable talent, but one that no one was aware of: he could code like the wind! Unfortunatly, without access to a computer, 
-          his dreams of becoming "Hokage", (leader of the village), were nigh impossible.   
-          One day, as usual, once Sam meets a villager, he shouts to him "I will become the Hokage!!!" The villager just walked away, shaking his head and regretting the day he ever found the basket.
-          Suddenly, Sam hears a loud noise from outside of the wall. When he looks up, a giant black dragon head shows up. 
-          On that day, Sam remember, that was a life under their rule of being caged like birds.
-           </marquee>
+        <marquee direction="up"  behavior="slide" height="100%">Once upon a time, there was a small village on the edge of a river. One day, a villager heard crying coming from a small basket floating down the river; the villager quickly swam out to investigate. Low and behold, the basket held a baby!
+          15 years later the baby, named "Sam" by the townsfolk, is all grown up. Sam was born with a remarkable talent, he could code like the wind! A passing trader realized this,
+          and told Sam of a place he should go to hone his talents. At once, he embarked on a noble quest to the Ruby Caves in order to study under the famous adventurer's guild secluded there.
+          Unfortunately for him, the guild wasnt the only ancient thing that called the caves home... 
+          </marquee>
            </div>
         <p className="welcome">Welcome, adventurer! Please click start to begin your journey!</p>
-        {/* <Button primary as={NavLink} to="/CharPage"> onClick={clickMe} Start </Button> */}
-        <Button onClick={goToCharPage}> Start </Button>
+        {/* <Button primary as={NavLink} to="/PickClass"> onClick={clickMe} Start </Button> */}
+        <Button  className="start-button" onClick={goToPickClass}> Start </Button>
         </div>
     )
 
